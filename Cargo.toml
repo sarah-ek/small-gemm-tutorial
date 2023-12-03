@@ -1,0 +1,22 @@
+[package]
+name = "small-gemm-tutorial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytemuck = "1.14.0"
+pulp = "0.18.6"
+
+[dev-dependencies]
+criterion = "0.5.1"
+faer = "0.15.0"
+faer-core = "0.15.0"
+gemm = "0.16.15"
+ndarray = "0.15.6"
+num-complex = "0.4.4"
+
+[[bench]]
+name = "bench"
+harness = false
