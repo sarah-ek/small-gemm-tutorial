@@ -1,5 +1,7 @@
 use criterion::*;
 
+extern crate openblas_src;
+
 fn bench_faer(criterion: &mut Criterion) {
     let one = faer::complex_native::c64::new(1.0, 0.0);
 

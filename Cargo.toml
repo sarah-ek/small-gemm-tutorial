@@ -14,8 +14,10 @@ criterion = "0.5.1"
 faer = "0.15.0"
 faer-core = "0.15.0"
 gemm = "0.16.15"
-ndarray = "0.15.6"
 num-complex = "0.4.4"
+openblas-src = { version = "*", features = ["static"] }
+ndarray = { version = "*", features = ['blas'] }
+rand = "0.8.5"
 
 [[bench]]
 name = "bench"
